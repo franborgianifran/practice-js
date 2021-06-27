@@ -6,8 +6,6 @@
 }
 html{
     background-image: url('https://blogs.unsw.edu.au/nowideas/files/2019/06/cambiar-imagen-corporativa.jpg');
-
-    background-repeat: no-repeat;
     background-size: cover;
 }
 header{
@@ -62,7 +60,7 @@ header a:hover{
 .active ul li a{
     width: 100%;
     padding: 20px;
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 26px;
     
 }
@@ -85,6 +83,7 @@ main h1{
     margin-bottom: 130px;
     color: white;
     text-align: center;
+    background-color: #70304a;
 }
 main button{
     width: 200px;
@@ -121,9 +120,9 @@ button:hover{
     .active ul li a{
         width: 100%;
         padding: 20px;
-        margin-top: 5%;
+        margin-top: 3%;
         font-size: 26px;
-        
+
     }
     .active ul li a:hover{
         background-color: #ffc300;
