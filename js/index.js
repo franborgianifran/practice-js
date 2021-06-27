@@ -90,3 +90,19 @@ function calcularAreaCirculo(){
     const area = areaCircunferencia(value)
     alert(area);
 }
+
+function calcularAlturaTriangulo(lado1, lado2, base){
+    const lado1Triangulo = document.getElementById("lado1Triangulo");
+    const lado2Triangulo = document.getElementById("lado2Triangulo");
+    const baseTriangulo = document.getElementById("baseTriangulo");
+    const value1 = lado1Triangulo.value;
+    const value2 = lado2Triangulo.value;
+    const value3 = baseTriangulo.value;
+    if(value1 == value2){
+        let alturaTriangulo = Math.sqrt(value1**2 - (value3/2)**2)
+        alert(`El triangulo es isosceles y su altura es ${alturaTriangulo}`);
+    }else{
+        alert(`Tu triangulo no es isosceles`);
+    }
+    
+}
