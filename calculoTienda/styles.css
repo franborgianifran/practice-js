@@ -7,6 +7,11 @@
 .aviso{
     display: none;
 }
+html{
+    background-image: url('https://blogs.unsw.edu.au/nowideas/files/2019/06/cambiar-imagen-corporativa.jpg');
+    background-size: cover;
+    color: white;
+}
 header{
     width: 100%;
     background-color: #c70039;
@@ -48,14 +53,16 @@ main{
 }
 label{
     margin: 0 auto;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 20px;
+    background-color: #70304a;
+    color: white;
 }
 input{
     display: block;
     margin: 10px auto;
     margin-bottom: 30px;
-    outline: #7779ac;
+    outline: #70304a;
     height: 40px;
     width: 300px;
     text-align: center;
