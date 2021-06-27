@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h2>Franco <b>Borgiani</b></h3>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Calcular figuras geometricas</a></li>
+                <li><a href="#">Calcular descuentos</a></li>
+                <li><a href="#">Proximamente...</a></li>
+            </ul>
+        </nav>
+        <img src="../icons8-menú.svg" onclick="menu()"/>
+    </header>
     <main>
         <h1>Calculadora de Descuentos</h1>
         <form action="">
             <label for="originalPrice">Cual es el precio original del producto?</label>
             <input type="number" id="originalPrice">
-            <br>
             <label for="discount">Cual es el porcentaje de descuento?</label>
             <input type="number" id="discount">
             <label for="">Valor del cupon</label>
             <input type="number" id="cupon">
-            <br>
             <button type="button" onclick="calcDiscount()">Calcular el precio final</button>
         </form>
-        <p id="priceParagraph"></p>
+        <div class="aviso">
+            <img src="../icons8-cancel.svg" onclick="calcDiscount()"alt="">
+            <p id="priceParagraph"></p>
+        </div>
     </main>
     <script src="./script.js"></script>
 </body>

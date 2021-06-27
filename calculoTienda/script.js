@@ -10,4 +10,10 @@ calcDiscount=(originalPrice, discount)=>{
     let lastPrice = discountPrice - cuponValue;
 
     paragraph.innerText = `El precio con descuento es de $${lastPrice}`;
+    const cartel = document.querySelector('.aviso');
+    cartel.classList.toggle('cartel');
+}
+function menu(){
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active')
 }
