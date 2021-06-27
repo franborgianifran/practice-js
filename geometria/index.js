@@ -106,3 +106,7 @@ function calcularAlturaTriangulo(lado1, lado2, base){
     }
     
 }
+function menu(){
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active')
+}
