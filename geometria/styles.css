@@ -92,6 +92,12 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 10px;
+}
+.grid:hover{
+    box-shadow: 0 0px 19px #B5D43C;
+    transform: scale(1.1);
+    transition: all .7s;
 }
 .grid label{
     color: var(--white);
@@ -103,6 +109,7 @@ html{
 }
 .active{
     opacity: 0;
+    transform: scale(0);
 }
 @media (max-width: 820px){
     header nav{
@@ -120,6 +127,7 @@ html{
         background-color: var(--black);
         opacity: 0.9;
         transition: .7s all;
+        transform: scale(1);
     }
     .active ul, .active ul li, .active ul li a{
         display: block;
