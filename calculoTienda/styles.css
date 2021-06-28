@@ -1,20 +1,28 @@
+:root{
+    --primary-color: #B5D43C;
+    --secondary-color: #D9EF81;
+    --black:#161616;
+    --white: #F7F7F7;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    color: var(--primary-color);
+}
 .aviso{
     display: none;
 }
 html{
-    background-image: url('https://blogs.unsw.edu.au/nowideas/files/2019/06/cambiar-imagen-corporativa.jpg');
+    background-image: url('https://static-cse.canva.com/blob/460744/1600w-IonzQEC6FFc.jpg');
     background-size: cover;
-    color: white;
 }
 header{
     width: 100%;
-    background-color: #c70039;
+    background-color: rgba(22, 22, 22, .9);
     display: flex;
     height: 50px;
     align-items: center;
@@ -28,7 +36,7 @@ header h2{
     color: white;
 }
 header h2 b{
-    color: #ffc300;
+    color: var(--primary-color);
 }
 header ul{
     display: flex;
@@ -41,7 +49,8 @@ header a{
 }
 header a:hover{
     transition: 1s ease all;
-    border-bottom: 1px solid #ffc300;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 main{
     width: 100%;
@@ -52,14 +61,13 @@ label{
     margin: 0 auto;
     margin-bottom: 30px;
     font-size: 20px;
-    background-color: #70304a;
     color: white;
 }
 input{
     display: block;
     margin: 10px auto;
     margin-bottom: 30px;
-    outline: #70304a;
+    outline: none;
     height: 40px;
     width: 300px;
     text-align: center;
@@ -68,16 +76,16 @@ input{
 button{
     width: 190px;
     height: 45px;
-    color: white;
-    background-color: #c70039;
-    border: 1px solid #c70039;
+    color: var(--black);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     font-size: 15px;
 }
 button:hover{
     transition: .7s ease all ;
-    color: #c70039;
-    background-color: white;
-    border: 1px solid #c70039;
+    color: rgba(22, 22, 22, .5);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
     font-size: 15px;
     cursor: pointer;
 }
@@ -90,7 +98,7 @@ main h1{
     left: 20%;
     right: 20%;
     bottom: 20%;
-    background-color: #c70039;
+    background-color: rgba(22, 22, 22, .9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +128,7 @@ main h1{
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #c70039;
+        background-color: rgba(22, 22, 22, .9);
     }
     .active ul, .active ul li, .active ul li a{
         display: block;
@@ -134,8 +142,9 @@ main h1{
         
     }
     .active ul li a:hover{
-        background-color: #ffc300;
+        background-color: var(--primary-color);
         transition: 1s ease all;
+        color: var(--white);
     }
     header img{
         display: block;
