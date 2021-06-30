@@ -16,7 +16,7 @@
     z-index: -1;
 }
 html{
-    background-color: var(--black);
+    /* background-color: var(--black); */
     color: #161616;
 }
 header{
